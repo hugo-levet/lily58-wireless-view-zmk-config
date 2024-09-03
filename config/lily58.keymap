@@ -16,6 +16,20 @@
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&kp CAPSLOCK>;
         };
+
+        raise: raise {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RAISE";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&tog 2>;
+        };
+
+        lower: lower {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LOWER";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&tog 1>;
+        };
     };
 
     keymap {
@@ -35,7 +49,7 @@
 &kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U     &kp I       &kp O    &kp P     &kp MINUS
 &maj_caps  &kp A   &kp S   &kp D     &kp F     &kp G                          &kp H   &kp J     &kp K       &kp L    &kp SEMI  &kp SQT
 &kp LCTRL  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp DELETE
+                           &kp LALT  &kp LGUI  &lower  &kp SPACE    &kp RET   &raise  &kp BSPC  &kp DELETE
             >;
         };
 
