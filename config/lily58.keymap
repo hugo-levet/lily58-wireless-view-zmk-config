@@ -36,14 +36,16 @@
         lower_than: lower_than {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp KP_N6 &kp KP_N0>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp KP_N6 &kp KP_N0>;
+
             label = "LOWER_THAN";
         };
 
         greater_than: greater_than {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LALT &kp KP_N6 &kp KP_N2>;
+            bindings = <&macro_press>, <&kp LALT &kp KP_N6 &kp KP_N2>;
+
             label = "GREATER_THAN";
         };
     };
