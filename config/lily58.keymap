@@ -81,11 +81,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &kp C_VOL_UP  &kp RA(NUMBER_4)  &kp RA(EQUAL)   &kp RA(NUMBER_5)  &kp RA(MINUS)                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS     &trans  &trans
-&trans  &kp C_VOL_DN  &trans            &kp UP_ARROW    &trans            &kp RA(NUMBER_6)                    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans  &trans
-&trans  &kp C_MUTE    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans                              &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MULTIPLY  &trans  &trans
-&trans  &trans        &trans            &trans          &trans            &trans            &trans    &trans  &kp KP_NUMBER_0  &kp M            &kp KP_DOT       &kp KP_SLASH     &trans  &trans
-                                        &trans          &trans            &trans            &trans    &trans  &trans           &trans           &trans
+&trans  &kp C_VOL_UP  &kp RA(NUMBER_4)  &kp RA(EQUAL)   &kp RA(NUMBER_5)  &kp RA(MINUS)                          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS     &trans  &trans
+&trans  &kp C_VOL_DN  &kp LESS_THAN     &kp UP_ARROW    &kp GREATER_THAN  &kp RA(NUMBER_6)                       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans  &trans
+&trans  &kp C_MUTE    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans                                 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MULTIPLY  &trans  &trans
+&trans  &trans        &trans            &trans          &trans            &trans            &trans    &kp EQUAL  &kp KP_NUMBER_0  &kp M            &kp KP_DOT       &kp KP_SLASH     &trans  &trans
+                                        &trans          &trans            &trans            &trans    &trans     &trans           &trans           &trans
             >;
         };
     };
